@@ -5,26 +5,9 @@ An example application that connects to the GitHub REST API and displays users
 from organizations.  Users can then be clicked to retrieve their repositories.
 Finally, a repository can be clicked and recent commits displayed.
 
-![](https://raw.github.com/tbranyen/github-viewer/master/screenshot.png)
+![https://www.youtube.com/watch?v=RGNcr9oQ60U]()
 
 ## Running locally ##
-
-To run locally you will need to install [Node.js](http://nodejs.org) and
-[grunt](http://github.com/gruntjs/grunt).
-
-``` bash
-# Clone the repository.
-git clone git://github.com/tbranyen/github-viewer.git
-
-# Change directory into it.
-cd github-viewer
-
-# Install the Node dependencies and Bower dependencies.
-npm install -q
-
-# Run the server
-grunt server
-```
 
 ## Stack ##
 
