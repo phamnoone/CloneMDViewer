@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0AF-Bc-Scv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="9YT-wj-1uA">
+            <objects>
+                <pageViewController storyboardIdentifier="QuizPageView" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="f11-Iv-HDr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5OH-r8-nOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66" y="-170"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bjN-x9-Gn7">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="0AF-Bc-Scv" customClass="ViewController" customModule="CloneMDView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UZe-vM-a8z"/>
+                        <viewControllerLayoutGuide type="bottom" id="plQ-q4-Zk5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YL3-wB-he4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkk-kf-7RM">
+                                <rect key="frame" x="136" y="318.5" width="103" height="30"/>
+                                <state key="normal" title="Goto pageview"/>
+                                <connections>
+                                    <action selector="gotoPageviewPressed:" destination="0AF-Bc-Scv" eventType="touchUpInside" id="b6X-1p-Dei"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rkk-kf-7RM" firstAttribute="centerX" secondItem="YL3-wB-he4" secondAttribute="centerX" id="XqI-Vt-sZg"/>
+                            <constraint firstItem="Rkk-kf-7RM" firstAttribute="centerY" secondItem="YL3-wB-he4" secondAttribute="centerY" id="rNa-6y-Y1P"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQT-j5-Fe4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="-68"/>
+        </scene>
+    </scenes>
+</document>

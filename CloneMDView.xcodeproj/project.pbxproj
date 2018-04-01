@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		B9385B91206F20B400104102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9385B90206F20B400104102 /* AppDelegate.swift */; };
-		B9385B93206F20B400104102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9385B92206F20B400104102 /* ViewController.swift */; };
-		B9385B96206F20B400104102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9385B94206F20B400104102 /* Main.storyboard */; };
-		B9385B98206F20B400104102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9385B97206F20B400104102 /* Assets.xcassets */; };
+		B9385B96206F20B400104102 /* MDView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9385B94206F20B400104102 /* MDView.storyboard */; };
 		B9385B9B206F20B400104102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9385B99206F20B400104102 /* LaunchScreen.storyboard */; };
 		B9385BA6206F20B400104102 /* CloneMDViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9385BA5206F20B400104102 /* CloneMDViewTests.swift */; };
 		B9385BB1206F20B400104102 /* CloneMDViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9385BB0206F20B400104102 /* CloneMDViewUITests.swift */; };
+		B9385BBF206F211300104102 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9385BBE206F211300104102 /* ContentViewController.swift */; };
+		B9385BC1206F23A800104102 /* HorizotalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9385BC0206F23A800104102 /* HorizotalPageViewController.swift */; };
+		B9385BC3206F23F200104102 /* VerticalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9385BC2206F23F200104102 /* VerticalPageViewController.swift */; };
+		B9385BC5206F241F00104102 /* PageViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9385BC4206F241F00104102 /* PageViewManager.swift */; };
+		B9385BC7206F26FC00104102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9385BC6206F26FC00104102 /* ViewController.swift */; };
+		B9385BC9206F270C00104102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9385BC8206F270B00104102 /* Main.storyboard */; };
+		B97EC7A12070790400F92EB4 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97EC7A02070790400F92EB4 /* Defines.swift */; };
+		B97EC7A320708DFC00F92EB4 /* MDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97EC7A220708DFC00F92EB4 /* MDViewController.swift */; };
+		B97EC7A520709CED00F92EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B97EC7A420709CED00F92EB4 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +43,7 @@
 /* Begin PBXFileReference section */
 		B9385B8D206F20B400104102 /* CloneMDView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneMDView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9385B90206F20B400104102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B9385B92206F20B400104102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B9385B95206F20B400104102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B9385B97206F20B400104102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9385B95206F20B400104102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MDView.storyboard; sourceTree = "<group>"; };
 		B9385B9A206F20B400104102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9385B9C206F20B400104102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9385BA1206F20B400104102 /* CloneMDViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloneMDViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +52,15 @@
 		B9385BAC206F20B400104102 /* CloneMDViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloneMDViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9385BB0206F20B400104102 /* CloneMDViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneMDViewUITests.swift; sourceTree = "<group>"; };
 		B9385BB2206F20B400104102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9385BBE206F211300104102 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		B9385BC0206F23A800104102 /* HorizotalPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizotalPageViewController.swift; sourceTree = "<group>"; };
+		B9385BC2206F23F200104102 /* VerticalPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalPageViewController.swift; sourceTree = "<group>"; };
+		B9385BC4206F241F00104102 /* PageViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewManager.swift; sourceTree = "<group>"; };
+		B9385BC6206F26FC00104102 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B9385BC8206F270B00104102 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B97EC7A02070790400F92EB4 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
+		B97EC7A220708DFC00F92EB4 /* MDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDViewController.swift; sourceTree = "<group>"; };
+		B97EC7A420709CED00F92EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +111,12 @@
 		B9385B8F206F20B400104102 /* CloneMDView */ = {
 			isa = PBXGroup;
 			children = (
+				B9385BCD206F27B700104102 /* Managers */,
+				B9385BCB206F278700104102 /* Resources */,
+				B9385BCA206F277400104102 /* Storyboards */,
+				B97EC79F207078A000F92EB4 /* Utilities */,
+				B9385BCC206F27A500104102 /* ViewControllers */,
 				B9385B90206F20B400104102 /* AppDelegate.swift */,
-				B9385B92206F20B400104102 /* ViewController.swift */,
-				B9385B94206F20B400104102 /* Main.storyboard */,
-				B9385B97206F20B400104102 /* Assets.xcassets */,
-				B9385B99206F20B400104102 /* LaunchScreen.storyboard */,
-				B9385B9C206F20B400104102 /* Info.plist */,
 			);
 			path = CloneMDView;
 			sourceTree = "<group>";
@@ -123,6 +137,53 @@
 				B9385BB2206F20B400104102 /* Info.plist */,
 			);
 			path = CloneMDViewUITests;
+			sourceTree = "<group>";
+		};
+		B9385BCA206F277400104102 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B9385B99206F20B400104102 /* LaunchScreen.storyboard */,
+				B9385B94206F20B400104102 /* MDView.storyboard */,
+				B9385BC8206F270B00104102 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B9385BCB206F278700104102 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9385B9C206F20B400104102 /* Info.plist */,
+				B97EC7A420709CED00F92EB4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B9385BCC206F27A500104102 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9385BBE206F211300104102 /* ContentViewController.swift */,
+				B9385BC2206F23F200104102 /* VerticalPageViewController.swift */,
+				B9385BC0206F23A800104102 /* HorizotalPageViewController.swift */,
+				B97EC7A220708DFC00F92EB4 /* MDViewController.swift */,
+				B9385BC6206F26FC00104102 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B9385BCD206F27B700104102 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B9385BC4206F241F00104102 /* PageViewManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B97EC79F207078A000F92EB4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B97EC7A02070790400F92EB4 /* Defines.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +254,7 @@
 				TargetAttributes = {
 					B9385B8C206F20B400104102 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2XAF7S3YJ6;
 						ProvisioningStyle = Automatic;
 					};
 					B9385BA0206F20B400104102 = {
@@ -233,8 +295,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9385B9B206F20B400104102 /* LaunchScreen.storyboard in Resources */,
-				B9385B98206F20B400104102 /* Assets.xcassets in Resources */,
-				B9385B96206F20B400104102 /* Main.storyboard in Resources */,
+				B9385B96206F20B400104102 /* MDView.storyboard in Resources */,
+				B97EC7A520709CED00F92EB4 /* Assets.xcassets in Resources */,
+				B9385BC9206F270C00104102 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +322,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9385B93206F20B400104102 /* ViewController.swift in Sources */,
+				B97EC7A12070790400F92EB4 /* Defines.swift in Sources */,
+				B97EC7A320708DFC00F92EB4 /* MDViewController.swift in Sources */,
+				B9385BC7206F26FC00104102 /* ViewController.swift in Sources */,
+				B9385BC1206F23A800104102 /* HorizotalPageViewController.swift in Sources */,
+				B9385BC5206F241F00104102 /* PageViewManager.swift in Sources */,
+				B9385BBF206F211300104102 /* ContentViewController.swift in Sources */,
+				B9385BC3206F23F200104102 /* VerticalPageViewController.swift in Sources */,
 				B9385B91206F20B400104102 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,12 +365,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B9385B94206F20B400104102 /* Main.storyboard */ = {
+		B9385B94206F20B400104102 /* MDView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B9385B95206F20B400104102 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MDView.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		B9385B99206F20B400104102 /* LaunchScreen.storyboard */ = {
@@ -310,6 +380,7 @@
 				B9385B9A206F20B400104102 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -412,7 +483,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CloneMDView/Info.plist;
+				DEVELOPMENT_TEAM = 2XAF7S3YJ6;
+				INFOPLIST_FILE = CloneMDView/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bkthanhpham.CloneMDView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +496,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CloneMDView/Info.plist;
+				DEVELOPMENT_TEAM = 2XAF7S3YJ6;
+				INFOPLIST_FILE = CloneMDView/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bkthanhpham.CloneMDView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +578,7 @@
 				B9385BB7206F20B400104102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9385BB8206F20B400104102 /* Build configuration list for PBXNativeTarget "CloneMDViewTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +587,7 @@
 				B9385BBA206F20B400104102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9385BBB206F20B400104102 /* Build configuration list for PBXNativeTarget "CloneMDViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +596,7 @@
 				B9385BBD206F20B400104102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
