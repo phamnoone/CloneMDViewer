@@ -21,6 +21,7 @@
 		B97EC7A12070790400F92EB4 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97EC7A02070790400F92EB4 /* Defines.swift */; };
 		B97EC7A320708DFC00F92EB4 /* MDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97EC7A220708DFC00F92EB4 /* MDViewController.swift */; };
 		B97EC7A520709CED00F92EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B97EC7A420709CED00F92EB4 /* Assets.xcassets */; };
+		B99489322070B9E9009767F1 /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99489312070B9E9009767F1 /* ImageScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		B97EC7A02070790400F92EB4 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 		B97EC7A220708DFC00F92EB4 /* MDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDViewController.swift; sourceTree = "<group>"; };
 		B97EC7A420709CED00F92EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B99489312070B9E9009767F1 /* ImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		B9385B8F206F20B400104102 /* CloneMDView */ = {
 			isa = PBXGroup;
 			children = (
+				B99489302070B9A1009767F1 /* Vendor */,
 				B9385BCD206F27B700104102 /* Managers */,
 				B9385BCB206F278700104102 /* Resources */,
 				B9385BCA206F277400104102 /* Storyboards */,
@@ -184,6 +187,14 @@
 				B97EC7A02070790400F92EB4 /* Defines.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B99489302070B9A1009767F1 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B99489312070B9E9009767F1 /* ImageScrollView.swift */,
+			);
+			name = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +336,7 @@
 				B97EC7A12070790400F92EB4 /* Defines.swift in Sources */,
 				B97EC7A320708DFC00F92EB4 /* MDViewController.swift in Sources */,
 				B9385BC7206F26FC00104102 /* ViewController.swift in Sources */,
+				B99489322070B9E9009767F1 /* ImageScrollView.swift in Sources */,
 				B9385BC1206F23A800104102 /* HorizotalPageViewController.swift in Sources */,
 				B9385BC5206F241F00104102 /* PageViewManager.swift in Sources */,
 				B9385BBF206F211300104102 /* ContentViewController.swift in Sources */,

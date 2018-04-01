@@ -13,19 +13,16 @@ protocol ContentViewDelegate : NSObjectProtocol {
 
 class ContentViewController: UIViewController {
 
-    @IBOutlet weak var mangaImage: UIImageView!
-    @IBOutlet weak var titleLb: UILabel!
+    @IBOutlet weak var contentScrollView: ImageScrollView!
+    @IBOutlet weak var contentView =  UIView()
     
     var pageIndex = 0
     weak var delegate:ContentViewDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
-        self.titleLb.text = pageIndex.description
-        if let image = UIImage(named:"1522038702-" + (self.pageIndex + 25).description + ".jpg") {
-            self.mangaImage.image = image
-        }
+        
+        
    
     }
 
@@ -36,12 +33,23 @@ class ContentViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        settingMagaImage()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.delegate?.viewDidLoad(index: self.pageIndex)
     }
+    
+    func settingMagaImage(){
 
-      
+
+        if let image = UIImage(named:"1522038702-" + (self.pageIndex + 25).description + ".jpg") {
+            self.contentScrollView.display(image: image)
+        }
+
+        
+    }
+    
+    
 }
