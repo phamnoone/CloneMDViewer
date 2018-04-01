@@ -28,8 +28,9 @@ class MDViewController: UIViewController {
     }
     
     func settingPageView(){
-        self.mdPageView = HorizotalPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
-        self.mdPageView.contentCount = 10
+        let opption = [UIPageViewControllerOptionInterPageSpacingKey : 25]
+        self.mdPageView = HorizotalPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options : opption)
+        self.mdPageView.contentCount = 20
         self.contentView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         self.contentView.addSubview(mdPageView.view)
         self.mdPageView.didMove(toParentViewController: self)

@@ -15,7 +15,7 @@
                 <pageViewController storyboardIdentifier="QuizPageView" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="f11-Iv-HDr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5OH-r8-nOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66" y="-170"/>
+            <point key="canvasLocation" x="-206" y="-69"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bjN-x9-Gn7">
