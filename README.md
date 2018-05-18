@@ -15,7 +15,3 @@ locally and updated via a `git pull` and open on Xcode
 ## License
 
 ```
-
-## Credits ##
-
-[@zzz]()
